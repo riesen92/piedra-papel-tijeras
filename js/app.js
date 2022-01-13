@@ -153,8 +153,8 @@ const termino = ()=>{
     juego.numero = 0;
     juego.puntaje = 0;           
 
-  animacionJugador.setAttribute('src', '../img/ia/0i.jpg');
-  animacionIa.setAttribute('src', '../img/jugador/0j.jpg');
+  animacionJugador.setAttribute('src', './img/ia/0i.jpg');
+  animacionIa.setAttribute('src', './img/jugador/0j.jpg');
 
   alert('Termino de ronda');
   aviso.innerText = '';
