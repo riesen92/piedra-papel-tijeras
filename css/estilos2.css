@@ -1,0 +1,228 @@
+*,*:before, *:after {
+    margin: 0;
+    padding:0;
+    outline:0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {  
+    width: 100%;
+    background: rgb(51,51,51);
+    /* background: linear-gradient(0deg, rgba(51,51,51,1) 49%, rgba(51,51,56,1) 97%); */
+    color:#fff;    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login{  
+    height: 380 px;
+    width: 600px;
+    padding: 0px;    
+    background-color: #ffffff;
+    border: 1px solid #5a5559;
+    border-radius: 4px;
+    box-shadow: inset 0 0 2px 1px rgba(255,255,255,0.8),
+          0 16px 10px -8px rgba(0,0,0,0.6);    
+  }
+  
+  .fila {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: row wrap;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 0;    
+    padding: 0;  
+    margin: 0 auto;
+  }
+  
+  .cabecera {
+    flex: 1 1 0;    
+    height: auto;
+    padding: 10px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    background-color: #333333;
+    color: #fffff2;    
+    border-radius: 1px; 
+    font-size: 1.5em;
+    font-weight: 700;    
+  }
+  
+  .seccion {
+    flex: 1 1 75%;    
+    padding: 5px;    
+    color: #000;     
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+  
+  .usuario {    
+    flex: 2 2 0;    
+    padding: 10px;    
+    text-align: center;
+  }
+  
+  .usuario-textbox{
+    flex-grow: 9;
+    flex-shrink:4;
+    flex-basis: 0;    
+    border: 1px solid #54546c;
+    border-radius: 4px;      
+    height: 27px;
+    padding: 5px;
+    background-color: #f4f7f7;
+    color: #2e294e;    
+    font-size: 1em;
+  }   
+
+ 
+
+  .clave {
+    flex: 2 2 0;      
+    padding: 10px;  
+    text-align: center;
+  }
+  
+  .clave-textbox {
+    flex-grow: 8;
+    flex-shrink:4;
+    flex-basis: 0;    
+    border: 1px solid #54546c;
+    border-radius: 4px;    
+    height: 27px;
+    padding: 5px;    
+    background-color: #f4f7f7;
+    color: #2e294e;    
+    font-size: 1em;
+  }
+
+  .usuario-aviso{
+    flex: 1 1 75%;    
+    padding: 5px;    
+    color: #ff0000;     
+    font-size: 1.2em;
+    font-weight: 400;
+    display:none;
+  }
+  
+  .clave-aviso{
+    flex: 1 1 75%;    
+    padding: 5px;    
+    color: #ff0000;     
+    font-size: 1.2em;
+    font-weight: 400;
+    display: none;
+  }
+  
+  .validacion-aviso{
+    flex: 1 1 75%;    
+    padding: 5px;    
+    color: #ff0000;     
+    font-size: 1.2em;
+    font-weight: 400;
+    display: none;
+  }
+  
+  
+  .btn-login{    
+    font-size: 1em;
+    font-weight: 700;    
+    height: 40px;
+    width: 400px;
+    padding: 10px;
+    line-height: 15px;
+    margin-top: 12px;    
+    background-color: #333333;
+    color: #fffff2;    
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px 1px rgba(222,222,222,0.3);
+  }
+  
+  .btn-login:hover{
+    background-color: #494848;
+  }
+
+
+  .juego{  
+    width: 100%;
+    padding: 0px;  
+    height: 90vh; 
+    display:none;  
+  }
+  
+  .puntaje{
+    font-size: 30px;
+  }
+  .filaJ {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center; 
+    padding: 0;  
+    margin: 0 auto;
+  }
+
+  .animacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+  }
+  .animacion img{     
+    display: block;
+    flex: 0 0 auto;
+    width: calc(100%/9);
+    height: calc(100%/9);
+  }
+  
+  
+  .eleccion-jugador{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .eleccion-ia{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .img-eleccion{      
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+  }
+  
+  .eleccion-jugador>.img-eleccion img{
+    width: 19%;    
+  }
+
+  .eleccion-ia> img{
+    width: 30%;
+  }
+
+  .tabla{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    flex-direction: column;
+    
+  }
+
+  td{
+    text-align: center;    
+  }
+
+ 

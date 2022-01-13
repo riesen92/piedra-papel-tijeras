@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos2.css">
+    <title>PIEDRA,PAPEL O TIJERAS</title>
+</head>
+<body>
+    <section class="login" id="login">
+        <div class="fila cabecera">
+          PIEDRA PAPEL TIJERAS
+        </div>
+        <div class="fila seccion">   
+          <label for="usuario" class="usuario">Usuario :</label>
+          <input type="text" name="usuario" id="usuario" class="fila usuario-textbox" />
+        </div>
+        <div class="fila usuario-aviso" id="usuario-aviso">Debe ingresar un usuario.</div>
+        <div class="fila seccion">
+          <label for="clave" class="clave">Contraseña :</label>
+          <input type="password" name="clave" id="clave" class="fila clave-textbox" />
+        </div>
+        <div class="fila clave-aviso" id="clave-aviso">Debe ingresar una contraseña.</div>
+        <div class="fila seccion">
+          <label>Usuario: admin  -  Contraseña:12345</label>
+        </div>
+        <div class="fila seccion">
+          <button type="submit" class="btn-login" onclick="login();">Ingresar</button>
+        </div>
+        <div class="fila validacion-aviso" id="validacion-aviso">El usuario o contraseña son incorrectos.</div>
+    </section>
+    <section class="juego" id="juego">   
+        <div class="filaJ ronda">
+        <h2 id="ronda"></h2>
+        </div>   
+        <div class="filaJ puntaje">
+          <h1 id="puntaje">PUNTAJE = 0</h1>
+        </div>
+        <div class="filaJ aviso">
+          <h2 id="aviso"></h2>
+        </div>
+        <div class="filaJ animacion">            
+                <img id="animacion-jugador" src="./img/jugador/0j.jpg">          
+                <img id="animacion-ia" src="./img/ia/0i.jpg">            
+        </div>
+        <div class="filaJ eleccion">
+            <div class="eleccion-jugador">
+               <div><p>Selecciona tu opción</p> </div>
+               <div class="img-eleccion">
+                <img src="./img/piedra.png" onclick="jugar('piedra')">
+                <img src="./img/papel.png" onclick="jugar('papel')">
+                <img src="./img/tijera.png" onclick="jugar('tijera')">                
+                </div>               
+            </div>
+            <div class="tabla">              
+              <h3>Ultimos Puntajes</h3>
+              <table id="tabla-ultimos">                 
+              </table>
+            </div>
+
+            <div class="filaJ eleccion-ia">
+                <p></p>
+                <img id="ia-animacion" src="./img/ia/ok.png">
+            </div>
+        </div>
+        <div class="filaJ">By Beño Leal 2022</div>
+    </section>
+    
+    
+    <script src="./js/login.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
